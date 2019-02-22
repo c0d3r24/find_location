@@ -21,7 +21,10 @@ const LONGITUDE_DELTA = LATITUDE_DELTA * ASPECT_RATIO;
 
 class MainComponent extends React.Component {
     state = {
-        region: null,
+        region: {latitude: 0,
+            longitude: 0,
+            latitudeDelta: LATITUDE_DELTA,
+            longitudeDelta: LONGITUDE_DELTA,},
         selectedIndex: null,
         height: 100,
         hasLocationPermissions: false,
